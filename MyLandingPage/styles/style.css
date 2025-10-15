@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #F4F4F6;
+}
+
+/*
+Color principal	Morado intenso	    #7E3FF2   Logo, botones principales, acentos
+Secundario 1	Lila claro	        #C7A7FF	  Fondos suaves, resaltes en hover
+Secundario 2	Azul grisáceo	    #4C4F69	  Tipografía y bordes
+Neutro claro	Gris claro	        #F4F4F6	  Fondo general o secciones secundarias
+Neutro oscuro	Gris carbón	        #1E1E2E	  Fondo de encabezado o footer
+Complementario	Verde azulado suave	#45D1C5	  Detalles, enlaces o indicadores activos
+
+    Estilos del menú, header.
+*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7E3FF2;
+}
+#navMenu{
+    margin: 0;
+    padding: 0;
+}
+#tayDevLogo{
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    margin-right: 10%;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 17px;
+    background-color: #7E3FF2;
+}
+a:hover{
+    background-color: #C7A7FF;
+    color: #4C4F69;
+}
+
+
+/*
+    Estilos de main, formulario
+*/
