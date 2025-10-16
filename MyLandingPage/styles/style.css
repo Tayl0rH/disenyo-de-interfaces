@@ -36,14 +36,14 @@ header{
     list-style: none;
     margin-right: 10%;
 }
-a{
+#menu a{
     text-decoration: none;
     font-weight: bold;
     color: black;
     padding: 42px;
     background-color: #7E3FF2;
 }
-a:hover{
+#menu a:hover{
     background-color: #C7A7FF;
     color: #4C4F69;
 }
@@ -78,6 +78,10 @@ h2{
 }
 .informationForm{
     display: inline;
+    height: fit-content;
+    padding: 25px;
+    align-self: center;
+    margin-right: 15%;
     background-color: #C7A7FF;
 }
 .informationForm > h3{
@@ -85,8 +89,31 @@ h2{
     align-content: center;
 }
 .informationForm > #name,
-.informationForm > #mail,
-.informationForm > #message{
+.informationForm > #mail{
     margin: 20px 0px;
     padding: 1px 2px 1px 20px;
+    color: ;
+}
+.informationForm > #message{
+    margin: 20px 0px;
+    padding: 10px;
+    width: 75%;
+    background-color: #F4F4F6;
+}
+
+button{
+    background-color: #7E3FF2;
+    border-radius: 5px;
+    padding: 5px 12px;
+    border-color: #4C4F69;
+}
+
+
+/*
+    Estios de footer
+*/
+
+footer {
+    background-color: #1E1E2E;
+    color: #F4F4F6;
 }
