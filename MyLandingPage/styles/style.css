@@ -1,8 +1,14 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: #F4F4F6;
 }
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: 
+        auto 1fr auto;
+}
+
 
 /*
 Color principal	Morado intenso	    #7E3FF2   Logo, botones principales, acentos
@@ -20,13 +26,9 @@ header{
     align-items: center;
     background-color: #7E3FF2;
 }
-#navMenu{
-    margin: 0;
-    padding: 0;
-}
 #tayDevLogo{
-    width: 200px;
-    height: 50px;
+    width: 400px;
+    height: 100px;
     margin-right: auto;
 }
 #menu{
@@ -38,7 +40,7 @@ a{
     text-decoration: none;
     font-weight: bold;
     color: black;
-    padding: 17px;
+    padding: 42px;
     background-color: #7E3FF2;
 }
 a:hover{
@@ -50,3 +52,41 @@ a:hover{
 /*
     Estilos de main, formulario
 */
+
+main{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F4F4F6;
+}
+h1, h2{
+    font-size: 35px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+h2{
+    padding: 25px;
+    font-size: 25px;
+}
+.sloganInfo, .informationForm{
+    align-content: center;
+}
+.sloganInfo{
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 500px;
+}
+.informationForm{
+    display: inline;
+    background-color: #C7A7FF;
+}
+.informationForm > h3{
+    font-size: 30px;
+    align-content: center;
+}
+.informationForm > #name,
+.informationForm > #mail,
+.informationForm > #message{
+    margin: 20px 0px;
+    padding: 1px 2px 1px 20px;
+}
