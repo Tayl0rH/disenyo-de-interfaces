@@ -31,22 +31,7 @@ header{
     height: 100px;
     margin-right: auto;
 }
-#menu{
-    display: flex;
-    list-style: none;
-    margin-right: 10%;
-}
-#menu a{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    padding: 42px;
-    background-color: #7E3FF2;
-}
-#menu a:hover{
-    background-color: #C7A7FF;
-    color: #4C4F69;
-}
+
 
 
 /*
@@ -56,13 +41,18 @@ header{
 main{
     display: flex;
     justify-content: space-around;
-    background-color: #F4F4F6;
+    background-image: url(../images/background/fondo-landingpage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 h1, h2{
     font-size: 35px;
     text-align: center;
     height: auto;
     width: auto;
+}
+h1{
+    margin-bottom: 30px;
 }
 h2{
     padding: 25px;
@@ -75,6 +65,7 @@ h2{
     padding-left: 50px;
     padding-right: 50px;
     max-width: 500px;
+
 }
 .informationForm{
     display: inline;
@@ -83,6 +74,10 @@ h2{
     align-self: center;
     margin-right: 15%;
     background-color: #C7A7FF;
+    
+    border: 2px #7E3FF2;
+    border-radius: 10px;
+    border-style: solid;
 }
 .informationForm > h3{
     font-size: 30px;
@@ -92,11 +87,12 @@ h2{
 .informationForm > #mail{
     margin: 20px 0px;
     padding: 1px 2px 1px 20px;
+    width: 80%;
 }
 .informationForm > #message{
     margin: 20px 0px;
     padding: 10px;
-    width: 75%;
+    width: 80%;
     background-color: #F4F4F6;
 }
 
@@ -104,7 +100,13 @@ button{
     background-color: #7E3FF2;
     border-radius: 5px;
     padding: 5px 12px;
-    border-color: #4C4F69;
+    border-color: #1E1E2E;
+    color: #F4F4F6;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #1E1E2E;
+    width: 100px;
+    height: 50px;
 }
 
 
@@ -113,6 +115,15 @@ button{
 */
 
 footer {
-    background-color: #1E1E2E;
+    display: flex;
+    text-decoration: none;
+    height: 100px;
+    background: linear-gradient(0deg,rgba(30, 30, 46, 1) 0%, rgba(65, 59, 90, 1) 9%, rgba(199, 167, 255, 1) 49%, rgba(244, 244, 246, 1) 100%);;
     color: #F4F4F6;
+    justify-content: center;
+    align-items: center;
 }
+
+.rrssLogos{
+    height: 70px;
+} 
