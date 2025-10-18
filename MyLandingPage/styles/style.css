@@ -11,12 +11,20 @@ body {
 
 
 /*
-Color principal	Morado intenso	    #7E3FF2   Logo, botones principales, acentos
-Secundario 1	Lila claro	        #C7A7FF	  Fondos suaves, resaltes en hover
+Color principal	Morado intenso	    #4CAF50   Logo, botones principales, acentos
+Secundario 1	Lila claro	        #A7ECA4	  Fondos suaves, resaltes en hover
 Secundario 2	Azul grisáceo	    #4C4F69	  Tipografía y bordes
 Neutro claro	Gris claro	        #F4F4F6	  Fondo general o secciones secundarias
 Neutro oscuro	Gris carbón	        #1E1E2E	  Fondo de encabezado o footer
-Complementario	Verde azulado suave	#45D1C5	  Detalles, enlaces o indicadores activos
+Complementario	Verde azulado suave	#F5C94A	  Detalles, enlaces o indicadores activos
+
+
+Color principal	Verde natural	        #4CAF50	  Logo, botones principales, acentos
+Secundario 1	Verde claro lima	    #A7ECA4	  Fondos suaves, hover, bordes suaves
+Secundario 2	Azul grisáceo	        #4C4F69	  Tipografía y divisores
+Neutro claro	Gris claro	            #F4F4F6	  Fondo general o secciones secundarias
+Neutro oscuro	Gris carbón	            #1E1E2E	 Fondo de encabezado o footer
+Complementario	Amarillo cálido suave	#F5C94A	 Detalles, enlaces o indicadores activos (añade energía y contraste con el verde)
 
     Estilos del menú, header.
 */
@@ -24,7 +32,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7E3FF2;
+    background-color: #4CAF50;
 }
 #tayDevLogo{
     width: 400px;
@@ -73,9 +81,9 @@ h2{
     padding: 25px;
     align-self: center;
     margin-right: 15%;
-    background-color: #C7A7FF;
+    background-color: #A7ECA4;
     
-    border: 2px #7E3FF2;
+    border: 2px #4CAF50;
     border-radius: 10px;
     border-style: solid;
 }
@@ -97,7 +105,7 @@ h2{
 }
 
 button{
-    background-color: #7E3FF2;
+    background-color: #4CAF50;
     border-radius: 5px;
     padding: 5px 12px;
     border-color: #1E1E2E;
@@ -118,12 +126,14 @@ footer {
     display: flex;
     text-decoration: none;
     height: 100px;
-    background: linear-gradient(0deg,rgba(30, 30, 46, 1) 0%, rgba(65, 59, 90, 1) 9%, rgba(199, 167, 255, 1) 49%, rgba(244, 244, 246, 1) 100%);;
+    background: linear-gradient(0deg,rgba(30, 30, 46, 1) 0%,
+                                    rgba(76, 175, 80, 1) 9%, 
+                                    rgba(167, 236, 164, 1) 39%, 
+                                    white 100%);
     color: #F4F4F6;
     justify-content: center;
     align-items: center;
 }
-
 .rrssLogos{
     height: 70px;
 } 
