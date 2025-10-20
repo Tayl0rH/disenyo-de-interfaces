@@ -5,18 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacer un pedido</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <form action="pedido">
-        <p>Nombre: <input type="text" name="name"></p>
-        <p>DNI: <input type="text" name="dni"></p>
-        <p>Correo Electrónico: <input type="email" name="mail"></p>
-        <p>Productos: <textarea name="products" id="products"></textarea></p>
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
-    </form>
+    <header>
+        
+        <ul>
+            <li><img src="img/logo/LocalCaddyLogoHeaderNoBackground.png" alt="localCaddyLogo" id="localCaddyLogo"></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productList.html">Lista de productos</a></li>
+            <li><a href="form.html">Haz un Pedido</a></li>            
+        </ul>
+    </header>
+
+    <main>
+        <form action="pedido">
+            <p>Nombre: <input type="text" name="name"></p>
+            <p>DNI: <input type="text" name="dni"></p>
+            <p>Correo Electrónico: <input type="email" name="mail"></p>
+            <p>Productos: <textarea name="products" id="products"></textarea></p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+
+    <footer> 
+        <p><a href="mailto:info@taydev.es"><img src="img/rrss/gmail-logo.png" alt="gmail" class="rrssLogos"></a></p>
+        <p><a href="https://x.com"><img src="img/rrss/x-logo.png" alt="x" class="rrssLogos" height="50"></a></p>
+        <p><a href="https://github.com"><img src="img/rrss/github-logo.png" alt="maps" class="rrssLogos"></a></p>
+    </footer>
+
 </body>
 
 </html>
