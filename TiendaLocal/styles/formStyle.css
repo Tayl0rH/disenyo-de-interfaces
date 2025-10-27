@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: 
+    auto 1fr auto;
+    background-color: var(--color-neutro-claro);
+}
+img {
+    width: 100px;
+
+}
+@keyframes popButton {
+    0% { transform: scale(1); }
+    60% { transform: scale(1.08); }
+    100% { transform: scale(1.04); }
+}
+
+:root {
+  /* Colores principales y de marca */
+  --color-principal: #4CAF50; /* Verde natural - Logo, botones principales, acentos */
+  --color-secundario-1: #A7ECA4; /* Verde claro lima - Fondos suaves, hover, bordes suaves */
+  --color-secundario-2: #4C4F69; /* Azul grisáceo - Tipografía y divisores */
+
+  /* Colores neutros */
+  --color-neutro-claro: #F4F4F6; /* Gris claro - Fondo general o secciones secundarias */
+  --color-neutro-oscuro: #1E1E2E; /* Gris carbón - Fondo de encabezado o footer */
+
+  /* Color complementario */
+  --color-complementario: #F5C94A; /* Amarillo cálido suave - Detalles, enlaces o indicadores activos */
+}
+header{
+    background-color: var(--color-principal);
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2.5em;
+}
+nav li{
+    height: 100%;
+}
+
+nav li a{
+    display: block;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    color: var(--color-secundario-2);
+    background-color: var(--color-secundario-1);
+    border: 2px solid var(--color-secundario-2);
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+nav li:hover a{
+    animation: popButton 0.35s ease forwards;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+nav li:first-child a {
+    padding: 0;
+    background: none;
+    border: none;
+}
+nav li:first-child:hover a {
+    background: none;
+    border: none;
+    animation: none;
+}
+
+#localCaddyLogo{
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Separación entre iconos */
+    background: linear-gradient(0deg,
+                                rgba(30, 30, 46, 1) 0%,
+                                rgba(76, 175, 80, 1) 9%, 
+                                rgba(167, 236, 164, 1) 39%, 
+                                white 100%);
+    color: #F4F4F6;
+    height: 100px;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.rrssLogos {
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, 
+                filter 0.3s ease,
+                box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.rrssLogos:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
