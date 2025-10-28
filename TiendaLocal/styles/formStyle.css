@@ -83,6 +83,94 @@ nav li:first-child:hover a {
 
 
 
+main {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: var(--color-neutro-claro);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#imageForm {
+    width: 50%;
+}
+
+div h1 {
+    color: var(--color-principal);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+div h2 {
+    color: var(--color-secundario-2);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: var(--color-secundario-2);
+}
+
+form input,
+form textarea {
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 2px solid var(--color-secundario-1);
+    background-color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 8px var(--color-secundario-1);
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: fit-content;
+    padding: 0.7rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 12px;
+    background-color: var(--color-principal);
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: var(--color-secundario-1);
+    color: var(--color-secundario-2);
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+    transform: translateY(-3px);
+}
+
+
+
 
 
 
@@ -97,7 +185,7 @@ footer {
                                 rgba(30, 30, 46, 1) 0%,
                                 rgba(76, 175, 80, 1) 9%, 
                                 rgba(167, 236, 164, 1) 39%, 
-                                white 100%);
+                                var(--color-neutro-claro));
     color: #F4F4F6;
     height: 100px;
     align-items: center;

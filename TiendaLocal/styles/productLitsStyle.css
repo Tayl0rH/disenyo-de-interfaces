@@ -85,9 +85,10 @@ nav li:first-child:hover a {
 main {
     width: 90%;
     margin: 2rem auto;
+    background-image: url(../img/background/fondoLocalCaddy.jpg);
+    background-repeat: no-repeat;
 }
 
-/* Títulos de sección */
 main h1 {
     text-align: center;
     font-size: 2rem;
@@ -95,24 +96,16 @@ main h1 {
     margin-bottom: 1.5rem;
 }
 
-/* Lista de productos como carrusel */
 main ul {
     display: flex;
+    width: 80%;
+    backdrop-filter: blur(2.5px);
     gap: 1.5rem;
-    overflow-x: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     list-style: none;
-    scroll-behavior: smooth;
+    margin: 2rem auto 4rem auto;
 }
 
-main ul::-webkit-scrollbar {
-    height: 8px;
-}
-
-main ul::-webkit-scrollbar-thumb {
-    background-color: var(--color-principal);
-    border-radius: 4px;
-}
 
 main ul li {
     background-color: white;
@@ -138,16 +131,6 @@ main ul li img {
     border-radius: 12px;
     margin-bottom: 0.5rem;
 
-    /* Degradado en bordes */
-    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: cover;
-
-    mask-image: radial-gradient(circle, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: cover;
 }
 
 
@@ -167,7 +150,7 @@ footer {
                                 rgba(30, 30, 46, 1) 0%,
                                 rgba(76, 175, 80, 1) 9%, 
                                 rgba(167, 236, 164, 1) 39%, 
-                                white 100%);
+                                var(--color-neutro-claro));
     color: #F4F4F6;
     height: 100px;
     align-items: center;

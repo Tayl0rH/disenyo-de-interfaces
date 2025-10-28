@@ -16,21 +16,32 @@
                 <li><img src="img/logo/LocalCaddyLogoHeaderNoBackground.png" alt="localCaddyLogo" id="localCaddyLogo"></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productList.html">Lista de productos</a></li>
-                <li><a href="form.html">Haz un Pedido</a></li>            
+                <li><a href="form.html">Pide información</a></li>            
             </ul>
         </nav>
     </header>
 
     <main>
-        <form action="pedido">
-            <p>Nombre: <input type="text" name="name"></p>
-            <p>DNI: <input type="text" name="dni"></p>
-            <p>Correo Electrónico: <input type="email" name="mail"></p>
-            <p>Productos: <textarea name="products" id="products"></textarea></p>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-        </form>
+
+        <div>
+            <img src="img/form/LocalCaddy-imageForm.png" alt="Persona comprando en LocalCaddy" id="imageForm">
+        </div>
+
+
+        <div>
+            <h1>Contacta con nosotros para más información.</h1>
+            <h2>Disfruta lo mejor del campo con productos frescos y de confianza.</h2>
+            <form action="pedido">
+                <p>Nombre: <input type="text" name="name"></p>
+                <p>DNI: <input type="text" name="dni"></p>
+                <p>Correo Electrónico: <input type="email" name="mail"></p>
+                <p>Productos: <textarea name="products" id="products"></textarea></p>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
     </main>
 
     <footer> 
