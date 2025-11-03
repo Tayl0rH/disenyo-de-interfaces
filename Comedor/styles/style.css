@@ -13,3 +13,6 @@ form{
 label{
     color: #8E5A00;
 }
+#bg-image{
+    background: url(../images/bg-image.jpg);    
+}
