@@ -1,0 +1,15 @@
+#generalitatLogo{
+    width: 8%;
+    margin-left: 20px;
+}
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+form{
+    border-color: #FFC121;
+}
+label{
+    color: #8E5A00;
+}
