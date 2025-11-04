@@ -16,3 +16,12 @@ label{
 #bg-image{
     background: url(../images/bg-image.jpg);    
 }
+nav{
+    box-shadow: 3px -5px 7px 10px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 3px -5px 7px 10px rgba(0,0,0,0.76);
+    -moz-box-shadow: 3px -5px 7px 10px rgba(0,0,0,0.76);
+}
+.carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+}
