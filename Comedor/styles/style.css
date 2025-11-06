@@ -14,7 +14,8 @@ label{
     color: #8E5A00;
 }
 #bg-image{
-    background: url(../images/bg-image.jpg);    
+    background: url(../images/bg-image.jpeg);
+    background-size: cover;
 }
 nav{
     box-shadow: 3px -5px 7px 10px rgba(0,0,0,0.76);
